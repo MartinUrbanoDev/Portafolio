@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro'
+import Linkedin from '../components/LinkedIn.astro';
+import GitHub from '../components/GitHub.astro';
+import SocialPill from '../components/SocialPill.astro';
+import MailIcon from '../components/Mail.astro';
+import Experince from '../components/Experince.astro';
+import SuiteCase from '../components/SuiteCase.astro';
+import TextShine from '../components/TextShine.jsx'
+import Code from '../components/Code.astro';
+import Proyects from '../components/Proyects.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Martin | Portafolio">
+	<main class="px-2">
+		<SectionContainer class="py-44 mb-24">
+			<img class="rounded-full w-12 h-12 mb-10 object-cover" src="martin.jpeg" 
+			alt="">
+		  <h1 class="text-white font-bold text-5xl flex flex-row gap-x-4 pb-4">Hey soy Martin 
+			 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/martin-alejandro-urbano-5554b52b8/" class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a>
+		  </h1>
+		  <h2 class="text-2xl text-wrap"><span class="">+1 año de experiencia.</span> <span class="text-yellow-200/90 opacity-80">Desarrollador Web</span>
+			 <span class="text-red-200/90"> de Argentina, Cordoba.</span> <span class="opacity-75"> Especializado en crear aplicaciones unicas</span>
+		  </h2>
+
+		  <nav class="flex w-auto gap-x-2 mt-6">
+				<SocialPill href="https://www.linkedin.com/in/martin-alejandro-urbano-5554b52b8/">
+					<Linkedin class="size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/MartinUrbanoDev">
+					<GitHub class="size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="">
+          <MailIcon class="size-6" />
+					martinurn00@gmail.com
+				</SocialPill>
+			</nav>
+
+			<SectionContainer id="experiencia">				
+				<h2 class="flex items-center gap-x-5 mb-6 text-xl font-semibold">
+					<SuiteCase class="size-6" />
+					Experiencia
+				</h2>
+       <Experince />
+			</SectionContainer>
+			<SectionContainer id="proyectos">				
+				<h3 class="flex items-center gap-x-5 mb-6 text-3xl font-semibold">
+					<Code class="size-7" />
+					Proyectos
+				</h3>
+			 <Proyects />
+			</SectionContainer>
+			<Footer />
+		</SectionContainer>
+	</main>
+</Layout>

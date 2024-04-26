@@ -1,0 +1,39 @@
+---
+import type { Code } from "astro:components"
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: "Marzo 2024",
+    title: "Tecnologias Aprendidas en AppWise Inovations",
+    description:
+    "HTML5, CSS, JavaScript, Astro, React, Git, GitHub.",
+    link: "https://github.com/MartinUrbanoDev",
+  },
+  {
+    date: "Abril 2024",
+    title: "AppWise Inovations",
+    description:
+    "Mi primera experiencia laboral me enseñó que el trabajo duro y la actitud positiva son clave para el éxito. También aprendí a valorar el apoyo de mis compañeros y a disfrutar de los pequeños logros en el camino. Fue el comienzo de mi viaje profesional y siempre recordaré esa etapa con gratitud.",
+    
+  },
+  {
+    date: "Mayo 2024",
+    title: "Landing Page para AppWise Inovations",
+    description: 
+    "Primer tarea para AppWise Inovations.",
+    
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+   {
+     EXPERIENCE.map((experiencie) => (
+     <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+     ))
+   }
+</ol>
+
