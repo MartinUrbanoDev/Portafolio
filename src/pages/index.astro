@@ -8,7 +8,6 @@ import SocialPill from '../components/SocialPill.astro';
 import MailIcon from '../components/Mail.astro';
 import Experince from '../components/Experince.astro';
 import SuiteCase from '../components/SuiteCase.astro';
-import TextShine from '../components/TextShine.jsx'
 import Code from '../components/Code.astro';
 import Proyects from '../components/Proyects.astro';
 import Footer from '../components/Footer.astro';
@@ -16,7 +15,7 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Martin | Portafolio">
 	<main class="px-2">
-		<SectionContainer class="py-44 mb-24">
+		<SectionContainer id="inicio" class="py-44 mb-24">
 			<img class="rounded-full w-12 h-12 mb-10 object-cover" src="martin.jpeg" 
 			alt="">
 		  <h1 class="text-white font-bold text-5xl flex flex-row gap-x-4 pb-4">Hey soy Martin 
@@ -35,9 +34,9 @@ import Footer from '../components/Footer.astro';
 					<GitHub class="size-6" />
 					GitHub
 				</SocialPill>
-				<SocialPill href="">
+				<SocialPill >
           <MailIcon class="size-6" />
-					martinurn00@gmail.com
+					martinurb00@gmail.com
 				</SocialPill>
 			</nav>
 
@@ -48,7 +47,7 @@ import Footer from '../components/Footer.astro';
 				</h2>
        <Experince />
 			</SectionContainer>
-			<SectionContainer id="proyectos">				
+			<SectionContainer id="proyecto">				
 				<h3 class="flex items-center gap-x-5 mb-6 text-3xl font-semibold">
 					<Code class="size-7" />
 					Proyectos
